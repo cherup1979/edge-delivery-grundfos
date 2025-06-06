@@ -13,14 +13,35 @@
 :root {
   /* colors */
   --background-color: white;
+
+  
   --light-color: #f8f8f8;
   --dark-color: #505050;
+  
   --text-color: #131313;
+
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
 
+  /*Added by Arjun*/
+  /*--nav-background-color: #11497b;*/
+  --nav-background-color: transparent;
+  /*--nav-text-color: #ffffff;*/
+  --nav-text-color: #11497b;
+
   /* fonts */
+ /*--body-font-family: roboto, roboto-fallback, sans-serif;*/
+  /*Added by Arjun*/
+
+  --action-default-hover:#11497b;
+  --action-default-focus:#0d3c6a;
+  --action-default-active:#0d3c6a;
+
   --body-font-family: roboto, roboto-fallback, sans-serif;
+  /*Added by Arjun*/
+  /*--body-font-family: 'Open Sans', 'Lucida Grande', Tahoma, Geneva, Verdana, sans-serif;*/
+--body-font-family: Lucida Grande,Tahoma,Geneva,Verdana,sans-serif
+
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
 
   /* body sizes */
@@ -37,7 +58,10 @@
   --heading-font-size-xs: 22px;
 
   /* nav height */
-  --nav-height: 64px;
+  /*Added by Arjun*/
+  /*--nav-height: 64px;*/
+  --nav-height: 54px;
+  
 }
 
 /* fallback fonts */

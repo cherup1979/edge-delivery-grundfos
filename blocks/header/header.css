@@ -1,9 +1,10 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+ background-color: var(--nav-background-color);
   width: 100%;
   z-index: 2;
   position: fixed;
+  color: var(--nav-text-color);
 }
 
 header nav {
@@ -19,6 +20,8 @@ header nav {
   height: var(--nav-height);
   padding: 0 24px;
   font-family: var(--body-font-family);
+  
+  
 }
 
 header nav[aria-expanded='true'] {
@@ -283,4 +286,17 @@ header nav .nav-tools {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+main > .section:first-of-type {
+  margin-top: 54px;
+}
+
+.nav-drop {
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.nav-drop:hover {
+  text-decoration: underline;
 }

@@ -103,6 +103,40 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   }
 }
 
+function handleTransparentAndScrolling(nav) {
+  const useTransparentVariant = !!document.querySelector('main > .section:first-child > .hero-wrapper:first-child');
+  const header = nav.closest('header');
+  let prevScrollingPosition = 0;
+
+  const changeToTransparentIfNeeded = (scrollY) => {
+    if (useTransparentVariant) {
+      header.classList.add('transparent', 'can-be-transparent');
+
+      if (scrollY > 100) {
+        header.classList.remove('transparent');
+      } else {
+        header.classList.add('transparent');
+      }
+    }
+  };
+
+  document.addEventListener('scroll', () => {
+    const { scrollY } = window;
+
+    changeToTransparentIfNeeded(scrollY);
+
+    if (scrollY - prevScrollingPosition > 0 && scrollY > 200) {
+      header.classList.add('fade-out');
+    } else if (prevScrollingPosition - scrollY > 0) {
+      header.classList.remove('fade-out');
+    }
+
+    prevScrollingPosition = scrollY;
+  });
+
+  changeToTransparentIfNeeded(window.scrollY);
+}
+
 /**
  * loads and decorates the header, mainly the nav
  * @param {Element} block The header block element
@@ -163,4 +197,6 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+
+  //handleTransparentAndScrolling(nav);
 }
