@@ -1,4 +1,9 @@
 /* header and nav layout */
+header {
+  height: 0;
+
+}
+
 header .nav-wrapper {
  background-color: var(--nav-background-color);
   width: 100%;
@@ -54,7 +59,9 @@ header nav p {
 }
 
 header nav a:any-link {
-  color: currentcolor;
+ /* color: currentcolor;*/
+  text-decoration: none;
+  color: #11497b; /* Default link color */
 }
 
 /* hamburger */
@@ -274,7 +281,7 @@ header nav .nav-tools {
 .nav-wrapper {
   background-color: #fff;
   border-bottom: 1px solid #ccc;
-  height: 132px;
+ /* height: 132px;*/
 }
 
 .nav-brand img {
@@ -289,7 +296,7 @@ header nav .nav-tools {
 }
 
 main > .section:first-of-type {
-  margin-top: 54px;
+  margin-top: 0;
 }
 
 .nav-drop {
@@ -297,6 +304,7 @@ main > .section:first-of-type {
   padding: 8px 12px;
 }
 
-.nav-drop:hover {
-  text-decoration: underline;
+
+.nav-wrapper:hover {
+  background-color: rgba(17, 73, 123, 0.85); /* 0.85 = 85% opacity */
 }
