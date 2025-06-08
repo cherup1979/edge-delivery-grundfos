@@ -1,0 +1,53 @@
+.cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  grid-gap: 24px;
+}
+
+.cards > ul > li {
+  border: 1px solid #dadada;
+  background-color: var(--background-color);
+}
+
+.cards .cards-card-body {
+  margin: 16px;
+}
+
+.cards .cards-card-image {
+  line-height: 0;
+}
+
+.cards > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.campaign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #E8F1F6;
+  height: 300px;
+}
+
+.campaign .campaign-title {
+  font-size: 2rem;
+  color: #11497b;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: var(--body-font-family);
+}
+.campaign-title,
+.campaign-description {
+  font-family: var(--body-font-family);
+  max-width: 700px; /* Adjust to your preferred width */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  word-wrap: break-word;
+
+}
