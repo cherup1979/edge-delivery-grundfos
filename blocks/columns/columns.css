@@ -38,4 +38,8 @@
   .columns h2 {
     color: var(--action-default-hover);
   }
+  .columns-img-col{
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
 }
