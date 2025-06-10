@@ -59,6 +59,7 @@ function getVideoElement(source, autoplay, background) {
   video.setAttribute('controls', '');
   if (autoplay) video.setAttribute('autoplay', '');
   if (background) {
+
     video.setAttribute('loop', '');
     video.setAttribute('playsinline', '');
     video.removeAttribute('controls');
@@ -112,7 +113,8 @@ export default async function decorate(block) {
   block.textContent = '';
   block.dataset.embedLoaded = false;
 
-  const autoplay = block.classList.contains('autoplay');
+  //const autoplay = block.classList.contains('autoplay');
+  const autoplay = true;
   if (placeholder) {
     block.classList.add('placeholder');
     const wrapper = document.createElement('div');
