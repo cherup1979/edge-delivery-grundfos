@@ -22,15 +22,7 @@
         "environments": [ "edit" ],
         "url": "https://main--edge-delivery-grundfos--cherup1979.aem.page/tools/sidekick/library.html",
         "includePaths": [ "**.docx**" ]
-        },
-            {
-            "id": "generate-variations",
-            "title": "Generate Variations",
-            "url": "https://experience.adobe.com/aem/generate-variations",
-            "passConfig": true,
-            "environments": [ "preview", "live", "edit" ],
-            "includePaths": ["**.docx**"]
-            }
+        }
     ]
 
 }
