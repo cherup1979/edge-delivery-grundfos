@@ -33,7 +33,7 @@
                 "en": "Generate with AI"
             },
             "environments": [
-                "edit"
+                "preview"
             ],
             "includePaths": [
                 "**.docx**"
