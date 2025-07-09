@@ -13,6 +13,8 @@ import {
   loadCSS,
 } from './aem.js';
 import assetsInit from './aem-assets-plugin-support.js';
+
+
 /**
  * Builds hero block and prepends to main in a new section.
  * @param {Element} main The container element
@@ -108,6 +110,7 @@ async function loadLazy(doc) {
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
+  import('../tools/sidekick/aem-genai-variations.js');
 }
 
 /**
