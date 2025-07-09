@@ -28,18 +28,17 @@
             ]
         },
         {
-            "id": "generate-variations",
-            "title": "Generate Variations",
-            "url": "https://experience.adobe.com/aem/generate-variations",
-            "passConfig": true,
+            "id": "aem-genai-variations",
+            "titleI18n": {
+                "en": "Generate with AI"
+            },
             "environments": [
-                "preview",
-                "live",
-                "edit"
+                "preview"
             ],
             "includePaths": [
                 "**.docx**"
-            ]
+            ],
+            "event": "aem-genai-variations-sidekick"
         }
     ]
 }
